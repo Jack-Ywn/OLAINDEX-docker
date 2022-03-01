@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## 使用[docker](https://hub.docker.com/repository/docker/jackywn/olaindex)部署
 
 ```shell
@@ -49,8 +48,3 @@ server {
     }
 }
 ```
-
-=======
-# OLAINDEX-docker
-OLAINDEX容器化
->>>>>>> fc6fbb06f343ce0eb8a1b0969a6d33e7d69b9390
