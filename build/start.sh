@@ -2,7 +2,7 @@
 cd /OLAINDEX
 
 #判断是否安装
-if [ -d "vendor" ];
+if [ "$(ls public/index.php)" ];
 then
      echo "OLAINDEX is already installed"
 else
