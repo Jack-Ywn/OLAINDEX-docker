@@ -1,11 +1,27 @@
 ## 使用[docker](https://hub.docker.com/repository/docker/jackywn/olaindex)部署
 
 ```shell
-docker run -d --init 
---name OLAINDEX 
--p 8000:8000 
--v /data/OLAINDEX:/OLAINDEX 
+#全新环境初始化部署
+docker run -d --init \
+--name OLAINDEX \
+-p 9090:8000 \
+-v /data/OLAINDEX:/OLAINDEX \
+jackywn/olaindex 
+
+#直接使用已经初始化好数据（由于网络原因导致容器无法下载OLAINDEX源码）
+git clone https://github.com/Jack-Ywn/OLAINDEX-docker.git
+cd OLAINDEX-docker
+mkdir /data
+tar xf OLAINDEX-docker.git -C /data
+
+docker run -d --init \
+--name OLAINDEX \
+-p 9090:8000 \
+-v /data/OLAINDEX:/OLAINDEX \
 jackywn/olaindex
+
+#访问http://ip/login?redirect=%2Fadmin即可使用OLAINDEX
+默认管理员帐号是 admin/123456
 ```
 
 ## 构建容器镜像
