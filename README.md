@@ -20,7 +20,7 @@ docker run -d --init \
 -v /data/OLAINDEX:/OLAINDEX \
 jackywn/olaindex
 
-#访问http://ip/login?redirect=%2Fadmin即可使用OLAINDEX
+#访问http://ip:8000/login?redirect=%2Fadmin即可使用OLAINDEX
 默认管理员帐号是 admin/123456
 ```
 
