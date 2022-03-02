@@ -12,7 +12,7 @@ jackywn/olaindex
 git clone https://github.com/Jack-Ywn/OLAINDEX-docker.git
 cd OLAINDEX-docker
 mkdir /data
-tar xf OLAINDEX-docker.git -C /data
+tar xf OLAINDEX.tar.gz -C /data
 
 docker run -d --init \
 --name OLAINDEX \
