@@ -4,7 +4,7 @@
 #全新环境初始化部署
 docker run -d --init \
 --name OLAINDEX \
--p 9090:8000 \
+-p 80:8000 \
 -v /data/OLAINDEX:/OLAINDEX \
 jackywn/olaindex 
 
@@ -16,7 +16,7 @@ tar xf OLAINDEX-docker.git -C /data
 
 docker run -d --init \
 --name OLAINDEX \
--p 9090:8000 \
+-p 80:8000 \
 -v /data/OLAINDEX:/OLAINDEX \
 jackywn/olaindex
 
