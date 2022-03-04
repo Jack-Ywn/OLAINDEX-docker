@@ -15,3 +15,5 @@ EXPOSE 8000
 COPY start.sh /opt/
 RUN chmod +x /opt/start.sh
 ENTRYPOINT ["/opt/start.sh"]
+
+VOLUME /OLAINDEX
